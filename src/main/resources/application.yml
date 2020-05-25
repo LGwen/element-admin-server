@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: root
+    password: lgwen444
+    url: jdbc:mysql://localhost:3306/school
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    password: lgwen_404
+    port: 6379
+    lettuce:
+      pool:
+        max-active: 10 #最大连接数
+        max-idle: 6  #最大空闲数
+        min-idle: 2 #最小空闲数
+      shutdown-timeout: 20 #关闭超时时间
+    database: 0
+    timeout: 50
